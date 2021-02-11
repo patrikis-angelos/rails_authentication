@@ -2,7 +2,9 @@
 <br>
 <br>
 <%= form_with model: @post do |f| %>
-
+  <% @post.errors.full_messages.each do |message| %>
+     <h3><%= message %> </h3>
+  <%end%>
 
   <%= f.label :title, "Title" %>
   <br>
