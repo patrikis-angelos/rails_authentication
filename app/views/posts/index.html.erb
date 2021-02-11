@@ -1,14 +1,23 @@
 <br>
 <br>
 <br>
+<% if user_signed_in? %>
 <%= link_to "Logout", destroy_user_session_path, method: :delete%>
+<% else %>
+<%= link_to "Login", new_user_session_path %>
+<% end %>
+<br>
+<%= link_to "Create new post", new_post_path %>
 <h1>Posts</h1>
 <% @posts.each do |post| %>
-  <% if user_signed_in? %>
-    <%= post.user.username%>
-    <br>
-  <% end %>
-  <%= post.title %>
+
+  <h2><%= post.title %>
+    <% if user_signed_in? %>
+      By: <%= post.user.username%>
+      <br>
+    <% end %>
+  </h2>
+  <%= post.body %>
   <br>
   <br>
 <% end %>
