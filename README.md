@@ -21,6 +21,7 @@ To get started with the project follow the steps below:
 - `rails db:migrate`
 - `rails s` to start the server
 - Go to `localhost:3000` on your browser
+- `rails webpacker:install` if webpacker is missing
 
 ## Author
 
