@@ -1,0 +1,19 @@
+<br>
+<br>
+<br>
+<%= form_with model: @post do |f| %>
+  <% @post.errors.full_messages.each do |message| %>
+     <h3><%= message %> </h3>
+  <%end%>
+
+  <%= f.label :title, "Title" %>
+  <br>
+  <%= f.text_field :title, placeholder: "Enter the title"  %>
+  <br>
+  <%= f.label :body, "Content" %>
+  <br>
+  <%= f.text_field :body %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
