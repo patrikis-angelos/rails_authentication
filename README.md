@@ -16,7 +16,6 @@ The project is created using the devise gem.
 To get started with the project follow the steps below:
 - You must have yarn installed
 - `git clone git@github.com:patrick-angelos/rails_authentication.git`
-- `cd rails_authentication`
 - `bundle install`
 - `rails db:migrate`
 - `rails s` to start the server
