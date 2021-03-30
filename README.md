@@ -2,7 +2,7 @@
 
 # Rails Authentication Project
 
-This project is about creating a 'members-only' site that everyone can post anonymously as long as they are sign up.
+This project is about creating a 'members-only' site that everyone can post anonymously as long as they are signed up.
 Other users that are logged in can see the author of each post.
 The project is created using the devise gem.
 
@@ -22,7 +22,7 @@ To get started with the project follow the steps below:
 - Go to `localhost:3000` on your browser
 - `rails webpacker:install` if webpacker is missing
 
-## Author
+## Authors
 
 👤 **Patrikis Angelos**
 
